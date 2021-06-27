@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tell2abrar/Frontend-Mentor---Testimonials-grid-section-solution)
-- Live Site URL: [Add live site URL here](https://tell2abrar.github.io/Frontend-Mentor---Testimonials-grid-section-solution/)
+- Solution URL: [source code](https://github.com/tell2abrar/Frontend-Mentor---Testimonials-grid-section-solution)
+- Live Site URL: [DEMO](https://tell2abrar.github.io/Frontend-Mentor---Testimonials-grid-section-solution/)
 
 ## My process
 

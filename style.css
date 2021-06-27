@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.grid-container {
+    width: 80%;
+    /* border: 2px solid black; */
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px,auto) minmax(200px,auto);
+    grid-gap: 20px;
+}
+
+@media (max-width:540px) {
+    .grid-container {
+        width: 95%;
+        /* border: 2px solid black; */
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(200px,auto) minmax(200px,auto);
+        grid-gap: 15px;
+    }
+}
+
+
+.item { 
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+.item-1{
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+    position: relative;
+}
+
+.customer__info {
+    /* border:2px solid blue; */
+    display: flex;
+}
+
+.customer__info-name {
+    color: hsl(0, 0%, 81%);
+}
+
+.customer__info-status {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.7;
+}
+.customer__info-img {
+    /* border:2px solid chartreuse; */
+    height: 40px;
+    margin-left: 10px;
+    align-self: center;
+
+}
+
+.customer__info-img img {
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.customer__info-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial {
+    color:hsl(0, 0%, 100%);
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.left-qoutation-mark{
+    font-size: 8rem;
+    width: 10%;    
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.about {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 81%);
+    opacity: 0.7;
+}
+
+.item-2{
+    background-color:hsl(217, 19%, 35%);
+    position: relative;
+}
+
+.item-3{
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+    position: relative;
+}
+
+.item-3 .testimonial, .item-4 .testimonial {
+    color:hsl(217, 19%, 35%) ;
+    
+}
+
+.item-3 .about, .item-4 .about {
+    color:hsl(217, 19%, 35%) ;
+    
+}
+
+.item-4{
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.item-5{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+    position: relative;
+}
+
+@media (max-width:540px) {
+    .item-1 {
+        margin-top: 5px;
+        grid-column: span 1;
+    }
+
+    .item-5 {
+        grid-column: span 1;
+    }
+
+    .item-3 {
+        grid-column: span 1;
+    }
+}
